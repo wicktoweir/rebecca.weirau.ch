@@ -1,0 +1,19 @@
+.centered {
+	text-align: center;
+}
+
+.black-back {
+	background: black;
+}
+
+.logo {
+	height: 80px;
+}
+
+.m0a {
+	margin: 0 auto;
+}
+
+.jumbotron {
+	background: #eee;
+}
