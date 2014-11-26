@@ -1,19 +1,67 @@
+/* General Page Elements */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 18px !important;
+	line-height: 1.6em !important;
+}
+
+a {
+	color: inherit;
+	font-family: 'Play', sans-serif;
+}
+
 .centered {
 	text-align: center;
 }
 
-.black-back {
-	background: black;
+.center-img {
+	margin: 0 auto;
 }
 
+/* Home Page Specific Elements */
+.jumbotron {
+	background: #eee;
+	margin: 45px 0 80px;
+}
+
+/* Header Elements */
 .logo {
 	height: 80px;
 }
 
-.m0a {
-	margin: 0 auto;
+.nav>li>a:hover, .nav>li>a:focus {
+	background: none;
+	color: #666;
 }
 
-.jumbotron {
-	background: #eee;
+.nav>li>a {
+	font-size: 20px;
 }
+
+.red-text {
+	color: #d21e12;
+	margin-bottom: 40px;
+	font-family: 'Play', sans-serif;
+	font-weight: bold;
+}
+
+/* Footer Specific Elements */
+.black-back {
+	background: black;
+}
+
+footer {
+	background: #333;
+}
+
+.active {
+	background: red;
+}
+
+
+
+
+
