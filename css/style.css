@@ -13,6 +13,10 @@ a {
 	font-family: 'Play', sans-serif;
 }
 
+.mt-80 {
+	margin-top: 80px;
+}
+
 .centered {
 	text-align: center;
 }
@@ -29,7 +33,8 @@ a {
 
 /* Header Elements */
 .logo {
-	height: 80px;
+	height: 70px;
+	margin-bottom: -25px;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
@@ -59,6 +64,27 @@ footer {
 
 .active {
 	background: red;
+}
+
+.work-img {
+	width: 250px;
+	border: solid #ddd 1px;
+	height: auto;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.logo-img {
+	height: 150px;
+}
+
+.gray-back {
+	background: #efefef;
+}
+
+.padding {
+	padding: 10px 25px 25px 25px;
 }
 
 

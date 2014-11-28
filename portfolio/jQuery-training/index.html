@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>		
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="jquery.scrollTo.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.scrollTo').click(function(e) {
+					e.preventDefault();
+					$.scrollTo($(this).attr('href'),1000, {axis: 'y'})
+				});
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<!--fonts-->
+		<title>jQuery-TheBasics</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<a style="display:inline-block" class="scrollTo link" href="#link1">Making It Work</a>
+			<a style="display:inline-block" class="scrollTo link" href="#link2">Show and Hide</a>
+			<a style="display:inline-block" class="scrollTo link" href="#link3">Setting CSS Properties</a>
+			<a style="display:inline-block" class="scrollTo link" href="#link4">SlideUp/SlideDown</a>
+			<a style="display:inline-block" class="scrollTo link" href="#link5">References</a>
+		</div>
+
+		<div class="wrapper">
+			<h1 id="first_h1"><span>jQuery</span> - The Basics</h1>
+			<ul>
+				<li>jQuery is a JavaScript library that makes working with webpages easier.</li>
+				<li>It is a way to make your webpages more interesting and interactive with animations and dynamic content.</li>	
+			</ul>	
+			<!--scrollTo link for Making it Work Section goes to here-->
+			<h1 id="link1">Making It Work</h1>	
+			<ul>
+				<li>jQuery must be linked to your HTML document in order to be used.</li>
+				<li>To do this, we need to reference the jQuery library in much the same way as we reference CSS files, by linking it in the HEAD of the HTML document.</li>
+				<li>Look at Example 1 of the handout for how to link to jQuery.</li>
+			</ul><br>
+			
+			<h2>Now Let's Look At Some Examples...</h2>
+			<!--scrollTo link for Show and Hide Section goes to here-->
+			<h1 id="link2">Show and Hide Methods</h1>
+			<div class="green_box">Click to Hide Me!</div>
+			<div class="orange_box">Click to Hide Me!</div>
+
+		<!--Section Break-->
+			<h2>How Did We Do That?</h2>
+			<ul>
+				<li>With jQuery we make the orange box or the green box hide. When we click on a box again, we can make that box hide and the other box show.</li> 
+				<li>Check out Example 2 of the handout for how to make it work.</li>
+			</ul>
+
+		<!--Section Break-->
+		<!--scrollTo link for Setting CSS Prop Section goes to here-->
+			<div id="link3"><h1>Setting CSS Properties</h1></div>
+			<div id="stop_light_text">
+				<ul>
+					<li>To the Left is a stop light simulator.</li>
+					<li>Hover over the colors on the stop light to see a bit of jQuery magic!</li>
+				</ul>
+			</div>
+			<div id="stop_light_box">
+				<div id="red"></div>
+				</br>
+				<div id="yellow"></div>
+				</br>
+				<div id="green"></div>
+			</div>
+			<div class="clear"></div>
+			<h2>How Did We Do That?</h2>
+			<ul>
+				<li>This is an example of using jQuery to change CSS elements.</li>
+				<li>The stop light seen initially changes when the mouse enters the circles taking it from a dark version of the color to a light version.</li>
+				<li>The red circle has an id of #red, the yellow circle has an id of #yellow and the green circle has an id of #green.</li>
+				<li>Look at Example 3 for more.</li>
+			</ul>
+		<!--Section Break-->	
+		<!--scrollTo link for Slide up/down goes to here-->
+			<div id="link4"><h1>SlideUp and SlideDown</h1></div>
+			<div id="drop_down_text">
+				<ul>
+					<li>The slideUp and slideDown functions are seen in many websites in the form of a drop down menu.</li>
+					<li>This is a simplified version of what a drop down menu does.</li>
+				</ul> 
+			</div>
+			<div id="drop_menu">
+				<div id="above_drop_down">Click Here!</div>
+				<div id="drop_down">Hello</div>
+			</div>
+			<div class="clear"></div>
+			<div>
+				<h2>How Did We Do That?</h2>
+				<ul>
+					<li>We use two div's, the first is the one with "Click Here!" and the second is the one with "Hello".</li>
+					<li>The "Hello" div is initially styled to be invisible.</li>
+					<li>When we click on the "Click Here!" div, we tell jQuery to make the "Hello" div visible using a slide down effect.</li>
+					<li>Finally, when we move the mouse out of the "Click Here!" div, we tell jQuery to slide the "Hello" div back up and make it invisible.</li>
+					<li>Example 4 has more on this trick!</li>
+				</ul>
+			<div>
+			<div class="clear"></div>
+			<div class="clear"></div>
+		<!--Section Break-->
+		<!--scrollTo link for References Section goes to here-->
+			<div id="link5"><h1>References</h1></div>
+			<p>Below are a few references for learning more about jQuery! The best way to learn it is to try it for yourself.</p>
+			<ul>
+				<li><a class="websites" href="http://www.w3schools.com/jquery/default.asp">www.w3schools.com/jquery/default.asp</a> - A website with descriptions of how to use jQuery as well as a large list of selectors for jQuery</li>				
+				<li><a class="websites" href="http://www.codecademy.com">www.codecademy.com</a> - A tutorial style site that offers a way to learn skills and then try doing them.</li>
+				<li><a class="websites" href="http://www.codeschool.com">www.codeschool.com</a> - A tutorial style site that offers a way to learn skills and then try doing them.</li>
+				<li><a class="websites" href="http://www.lynda.com">www.lynda.com</a> - A video library with different tutorials on how to do things</li>
+				<li><a class="websites" href="http://docs.jquery.com">www.docs.jquery.com</a> - The official jQuery site complete with tutorials and explanations of jQuery.</li>
+			</ul>
+		</div>
+	</body>
+
+</html

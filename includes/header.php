@@ -30,8 +30,10 @@
                <ul class="nav nav-justified">
                   <li><a href="/"><img class="logo" src="img/logo.png"></a></li>
                   <li class="nav-buttons"><a href="my-work.php">My Work</a></li>
+                  <li class="nav-buttons"><a href="my-resume.php">My Resume</a></li>
                   <li class="nav-buttons"><a href="contact.php">Contact Me</a></li>
                   <li class="nav-buttons"><a href="/">Home</a></li>
                </ul>
             </div>
          </div>
+      <hr>
